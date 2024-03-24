@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="display.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d3bb59eff3.js" crossorigin="anonymous"></script>
+    <!-- style navbar -->
+    <style>
+        .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+    </style>
+
+    <!-- style Darkmode -->
+    <style>
+        /* Gaya untuk mode gelap */
+        body.dark-mode {
+            background-color: #333; /* Warna latar belakang hitam */
+            color: #fff; /* Warna teks putih */
+        }
+    
+        /* Gaya untuk link pada mode gelap */
+        body.dark-mode a {
+            color: #00f; /* Warna tautan biru */
+        }
+    
+        /* Gaya untuk navbar pada mode gelap */
+        body.dark-mode .navbar {
+            background-color: #222; /* Warna latar belakang navbar hitam */
+        }
+    
+        /* Gaya untuk tombol pada mode gelap */
+        body.dark-mode .btn {
+            background-color: rgb(31, 31, 255); /* Warna tombol abu-abu tua */
+            color: #fff; /* Warna teks putih */
+        }
+    
+        /* Gaya untuk kartu pada mode gelap */
+        body.dark-mode .card {
+            background-color: #444; /* Warna latar belakang kartu abu-abu tua */
+            color: #fff; /* Warna teks putih */
+        }
+    </style>
+    
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <div id="navbar-example2" class="navbar navbar-light bg-dark px-3 pe-0">  <a class="navbar-brand" href="#">Portofolio</a>
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#Abt">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Skl">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Edu">Educations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Ser">Sertifications</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+            </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#Kdn">Kritik dan Saran</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/ye?igsh=ODZsano0dnJxaXB4">Instagram</a></li>
+            <li><a class="dropdown-item" href="https://x.com/kanyewest?s=21">Twitter</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+    <div style="margin-right: 50px;">  
+        <button class="btn btn-primary" onclick="toggleDarkMode()" >
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+    </div>
+    </nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</nav>
+
+<!-- end navbar -->
+<body>
+
+<!-- about -->
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    <h1 class="abt" id="Abt">About</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; max-height: 400px; margin: auto;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img width="100%" height="100%" src="image/naga2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img width="100%" height="100%" src="image/naga.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img width="100%" height="100%" src="image/naga3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <script>
+        // Aktifkan slide otomatis setiap 2 detik
+        $('.carousel').carousel({
+            interval: 2000
+        });
+    </script>
+    
+
+    <p id="tk1">Halo! Nama saya Kinur, dan saya adalah seorang desainer grafis yang bersemangat dan berpengalaman dalam menciptakan solusi kreatif untuk berbagai kebutuhan desain. Dengan lebih dari sepuluh tahun di industri ini, saya telah terlibat dalam berbagai proyek mulai dari desain logo hingga kampanye pemasaran yang terintegrasi.
+
+        Saya percaya bahwa desain bukan hanya tentang estetika, tetapi juga tentang komunikasi yang efektif dan pengalaman pengguna yang baik. Pendekatan saya terhadap setiap proyek adalah dengan memahami tujuan dan audiensnya secara menyeluruh, sehingga saya dapat menciptakan solusi yang sesuai dan relevan.
+        
+        Selain kemampuan dalam software desain terkemuka seperti Adobe Creative Suite, saya juga sangat memperhatikan tren desain terbaru dan teknologi yang terus berkembang. Saya senang berkolaborasi dengan klien untuk mewujudkan visi mereka dan menciptakan hasil yang melebihi harapan.
+        
+        Saya sangat bersemangat untuk terus belajar dan berkembang dalam industri ini, serta menjelajahi berbagai bidang desain yang baru dan menarik. Jika Anda tertarik untuk bekerja sama atau ingin tahu lebih banyak tentang saya, jangan ragu untuk menghubungi saya!
+        
+        Terima kasih telah mengunjungi portofolio saya</p>
+<!-- end -->
+
+<!-- Skills -->
+<h1 id="Skl">Skills</h1>
+<p id="tk2">Dalam perjalanan saya, saya telah mengembangkan serangkaian keterampilan yang beragam dan berharga. Di antara keterampilan-keterampilan tersebut, ada beberapa yang saya temukan menjadi inti dari identitas dan minat saya. Berikut adalah beberapa dari keterampilan yang saya cermati dan kembangkan:</p>
+<br>
+<div class="row justify-content-center">
+    <div class="col-md-3">
+        <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <img src="image/a7.jpg" class="card-img-top fit-in-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">kepemimpinan</h5>
+                <p class="card-text">Kemampuan untuk memimpin, menginspirasi, dan memotivasi orang lain menuju tujuan bersama dengan kepercayaan dan integritas.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <img src="image/a8.jpg" class="card-img-top fit-in-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">intelektual</h5>
+                <p class="card-text">Kecerdasan dalam memahami, menganalisis, dan menyelesaikan masalah dengan efektif, serta memiliki kemampuan belajar dan beradaptasi secara cepat.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img src="image/a9.jpeg" class="card-img-top fit-in-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">humoris</h5>
+                <p class="card-text">kemampuan untuk menyampaikan ide atau pesan dengan humor, mengurangi ketegangan, dan meningkatkan koneksi interpersonal dengan kecerdasan emosional.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalImage1" tabindex="-1" aria-labelledby="modalImage1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="image/a7.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImage2" tabindex="-1" aria-labelledby="modalImage2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="image/a8.jpg" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalImage3" tabindex="-1" aria-labelledby="modalImage3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="image/a9.jpeg" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+      <!-- Educatioms -->
+    <h1 id="Edu">Educations</h1>
+    <p id="tk3">
+        Selama perjalanan pendidikan yang panjang, saya telah dibimbing oleh berbagai institusi pendidikan yang memberikan landasan kokoh bagi perkembangan pribadi dan profesional saya. Mulai dari SMP hingga perguruan tinggi, setiap langkah dalam pendidikan saya telah membentuk nilai-nilai, keterampilan, dan pemahaman yang mendalam.
+        
+        Pendidikan dasar saya dimulai di SMP IT Nurul Ilmi Tenggarong, di mana saya diperkenalkan dengan fondasi-fondasi ilmu pengetahuan dan nilai-nilai agama yang kuat. Lingkungan belajar yang mendukung dan fasilitas yang memadai telah memberikan saya peluang untuk berkembang secara holistik, baik secara akademis maupun sosial.
+        
+        Saat melangkah ke jenjang pendidikan menengah atas, saya bergabung dengan SMA Negeri 10 Samarinda. Di sini, saya diperluas wawasan saya dalam berbagai mata pelajaran dan terlibat dalam beragam kegiatan ekstrakurikuler yang memperkaya pengalaman belajar saya. Guru-guru yang berdedikasi dan teman-teman yang inspiratif telah menjadi pilar dalam perjalanan pendidikan saya.
+        
+        Kemudian, melanjutkan perjalanan pendidikan tinggi saya, saya bergabung dengan Universitas Mulawarman. Di perguruan tinggi ini, saya mendalami bidang studi yang saya minati dan terlibat dalam kegiatan akademis dan non-akademis yang memperluas wawasan dan keterampilan saya. Dukungan dari dosen-dosen yang berpengalaman dan sarana pendukung yang memadai telah memfasilitasi pertumbuhan intelektual dan profesional saya.
+        
+        Perjalanan pendidikan saya dari SMP hingga perguruan tinggi telah membentuk fondasi yang kuat bagi karier saya di masa depan. Saya berterima kasih kepada semua pihak yang telah membantu dan mendukung saya selama ini dalam meraih mimpi-mimpi pendidikan saya. </p>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage4">
+                <img src="image/smp.jpg" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMP IT Nurul Ilmi Tenggarong</h5>
+                    <p class="card-text">Tahun Masuk: 2017 - Tahun Lulus: 2019</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage5">
+                <img src="image/sma.jpg" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMA Negeri 10 Samarinda</h5>
+                    <p class="card-text">Tahun Masuk: 2019 - Tahun Lulus: 2022</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage6">
+                <img src="image/uni.jpg" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Universitas Mulawarman</h5>
+                    <p class="card-text">Tahun Masuk: 2022 - Tahun Lulus: - </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="modalImage4" tabindex="-1" aria-labelledby="modalImage4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/smp.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="modalImage5" tabindex="-1" aria-labelledby="modalImage5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/sma.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="modalImage6" tabindex="-1" aria-labelledby="modalImage6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/uni.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- Sertificatiosm -->
+    <h1 id="Ser">Sertifications</h1>
+    <p id="tk4">
+        Saya sangat bangga telah mengumpulkan sejumlah sertifikasi yang menandai pencapaian dan kompetensi saya dalam berbagai bidang. Melalui kesempatan yang saya dapatkan, saya telah berhasil meraih sertifikat sebagai Peserta Webinar Kominfo, yang memperkaya pemahaman saya tentang teknologi informasi dan komunikasi. Selain itu, partisipasi saya dalam lomba Marching Band junior di Selangor, Malaysia pada tahun 2019 juga memberi saya pengalaman berharga dalam bidang seni dan olahraga.
+        
+        Selanjutnya, sebagai Koordinator Keamanan dalam acara yang diadakan oleh Insevent pada tahun 2023, saya berhasil memperlihatkan kemampuan organisasi dan kepemimpinan saya dalam mengelola aspek keamanan. Sertifikasi ini menjadi bukti konkrit atas dedikasi saya dalam memastikan keamanan dan keselamatan acara tersebut.
+        
+        Setiap sertifikasi ini bukan hanya sekadar pencapaian pribadi, tetapi juga representasi dari upaya keras dan komitmen saya untuk terus belajar dan berkembang. Saya berharap dapat terus memanfaatkan pengetahuan dan keterampilan yang saya peroleh dari setiap pengalaman ini untuk memberikan kontribusi yang berarti dalam berbagai aspek kehidupan saya.</p>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage7">
+                <img src="image/kominfo.jpg" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Kominfo</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage8">
+                <img src="image/inter.JPG" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Marching Band</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3">
+            <div class="card mb-3 w-100 card-hover" data-bs-toggle="modal" data-bs-target="#modalImage9">
+                <img src="image/i7.jpg" class="card-img-top fit-in-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Insevent</h5>
+                    <p class="card-text"></p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="modalImage7" tabindex="-1" aria-labelledby="modalImage7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/kominfo.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="modalImage8" tabindex="-1" aria-labelledby="modalImage8Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/inter.JPG" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="modalImage9" tabindex="-1" aria-labelledby="modalImage9Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="image/i7.jpg" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+<!-- Contact -->
+    <!-- Formulir Kontak -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 id="Kdn">Kritik Dan Saran</h5>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skrip JavaScript -->
+    <script>
+        function sendMessage() {
+            // Ambil nilai dari input
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            // Validasi input
+            if (name === "" || email === "" || message === "") {
+                alert("Harap isi semua kolom!");
+            } else {
+                // Kirim pesan (di sini Anda dapat menambahkan kode untuk mengirim pesan ke server)
+                alert("Pesan berhasil dikirim!\n\nNama: " + name + "\nEmail: " + email + "\nPesan: " + message);
+
+                // Setel nilai input kembali ke kosong
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+            }
+        }
+    </script>
+</div>
+
+</div>
+<script>
+    function toggleDarkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+    }
+</script>
+
+</body>
+</html>
